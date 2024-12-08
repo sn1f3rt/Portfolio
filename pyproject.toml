@@ -3,7 +3,7 @@ name = "Portfolio"
 version = "1.0.0"
 description = "My portfolio website."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "quart>=0.19.9",
 ]
