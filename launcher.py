@@ -4,6 +4,8 @@ import asyncio
 
 from factory import create_app
 
+from config import HOST, PORT
+
 try:
     # noinspection PyUnresolvedReferences
     import uvloop
@@ -19,4 +21,4 @@ app = create_app()
 if __name__ == "__main__":
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    app.run(loop=loop)
+    app.run(host=HOST, port=PORT, loop=loop)
