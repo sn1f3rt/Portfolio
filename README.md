@@ -1,9 +1,7 @@
 # Portfolio
 
-[![Lint](https://github.com/Sn1F3rt/Portfolio/actions/workflows/black.yml/badge.svg)](https://github.com/Sn1F3rt/Portfolio/actions/workflows/black.yml)
+[![Ruff](https://github.com/Sn1F3rt/Portfolio/actions/workflows/ruff.yml/badge.svg)](https://github.com/Sn1F3rt/Portfolio/actions/workflows/ruff.yml)
 [![License](https://img.shields.io/github/license/Sn1F3rt/Portfolio)](LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Sn1F3rt/Portfolio)](https://github.com/Sn1F3rt/Portfolio/commits/main/)
-[![GitHub stars](https://img.shields.io/github/stars/Sn1F3rt/Portfolio)](https://github.com/Sn1F3rt/Portfolio/)
 
 ## Table of Contents
 
@@ -25,37 +23,31 @@ This repository contains the source code for my personal portfolio website. The 
 
 - Git
 - Python 3.8 or higher (tested on 3.12)
+- [uv](https://docs.astral.sh/uv/)
 
 ## Installation
 
 1. Clone the repository
 
    ```shell
-    git clone https://github.com/Sn1F3rt/Portfolio.git
+   git clone https://github.com/Sn1F3rt/Portfolio.git
    ```
    
 2. Switch to the project directory
 
    ```shell
-    cd RoboNerva
+   cd Portfolio
    ```
    
 3. Create a virtual environment
 
    ```shell
-    python -m venv .venv
+   uv venv # or make env
    ```
-   
-4. Activate the virtual environment
+4. Install the dependencies
 
    ```shell
-    source .venv/bin/activate
-   ```
-   
-5. Install the dependencies
-
-   ```shell
-    pip install -r requirements.txt
+   uv sync --no-dev # or make install
    ```
 
 ## Configuration
@@ -67,7 +59,7 @@ Copy the [`config.example.py`](config.example.py) file to `config.py` and update
 ### Development
 
 ```shell
-python launcher.py
+uv run launcher.py # or make run
 ```
 
 ### Production
