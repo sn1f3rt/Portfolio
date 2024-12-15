@@ -20,7 +20,7 @@ dev:
 	uv run launcher.py
 
 prod:
-	hypercorn --bind 0.0.0.0:13030 --certfile cert.pem --keyfile key.pem launcher:app
+	hypercorn --bind 0.0.0.0:13130 --certfile cert.pem --keyfile key.pem launcher:app
 
 format:
 	ruff check --select I --fix .
