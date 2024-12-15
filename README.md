@@ -59,7 +59,7 @@ Copy the [`config.example.py`](config.example.py) file to `config.py` and update
 ### Development
 
 ```shell
-uv run launcher.py # or make run
+uv run launcher.py # or make dev
 ```
 
 ### Production
