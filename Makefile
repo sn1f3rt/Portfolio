@@ -11,7 +11,10 @@ install:
 	uv sync --no-dev
 
 install-dev:
-	uv sync --all-extras
+	uv sync --extra dev
+
+install-extras:
+	uv sync --all-extras --no-dev
 
 dev:
 	uv run launcher.py
