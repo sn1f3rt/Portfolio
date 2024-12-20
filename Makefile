@@ -4,9 +4,6 @@ env:
 rmenv:
 	rm -rf .venv
 
-activate:
-	source .venv/bin/activate
-
 install:
 	uv sync --no-dev
 
@@ -26,5 +23,5 @@ format:
 	ruff check --select I --fix .
 	ruff format .
 
-.PHONY: env rmenv activate install install-dev dev prod format
+.PHONY: env rmenv install install-dev install-extras dev prod format
 .DEFAULT_GOAL := dev
