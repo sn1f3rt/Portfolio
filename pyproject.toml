@@ -8,6 +8,11 @@ dependencies = [
     "quart>=0.19.9",
 ]
 
+[project.optional-dependencies]
+speed = [
+    "uvloop>=0.21.0",
+]
+
 [tool.uv]
 dev-dependencies = [
     "pre-commit>=4.0.1",
