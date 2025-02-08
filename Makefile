@@ -8,9 +8,12 @@ install:
 	uv sync --no-dev
 
 install-dev:
+	uv sync --all-extras
+
+install-dev-win:
 	uv sync --extra dev
 
-install-extras:
+install-prod:
 	uv sync --all-extras --no-dev
 
 dev:
